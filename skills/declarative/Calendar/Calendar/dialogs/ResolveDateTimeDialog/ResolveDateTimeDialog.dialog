@@ -277,7 +277,7 @@
                   "activityProcessed": true,
                   "allowLoop": true,
                   "options": {
-                    "query": "=$selected"
+                    "query": "=$selected.value"
                   }
                 }
               ]
@@ -882,6 +882,13 @@
       },
       "event": "CheckExpectedType",
       "actions": [
+        {
+          "$kind": "Microsoft.TraceActivity",
+          "$designer": {
+            "id": "yT1LHX"
+          },
+          "name": "ResolveDateTime.OnEvent_CheckExpectedType"
+        },
         {
           "$kind": "Microsoft.IfCondition",
           "$designer": {
